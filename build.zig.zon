@@ -1,7 +1,8 @@
 .{
-    .name = "cpu-driver",
+    .name = .cpu_driver,
+    .fingerprint = 0xb870cf0091860478,
     .version = "0.0.1",
-    //.minimum_zig_version = "0.14.0",
+    .minimum_zig_version = "0.14.0",
 
     .paths = .{
         "build.zig",
