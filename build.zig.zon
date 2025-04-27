@@ -1,7 +1,7 @@
 .{
-    .name = .cpu_driver,
-    .fingerprint = 0xb870cf0091860478,
-    .version = "0.0.1",
+    .name = .spinlock,
+    .fingerprint = 0x4a74a9d09adb1e3,
+    .version = "0.0.4",
     .minimum_zig_version = "0.14.0",
 
     .paths = .{
