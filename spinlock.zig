@@ -32,7 +32,7 @@ pub const Spinlock = struct {
 };
 
 test "basics" {
-    var lock = Spinlock{};
+    var lock: Spinlock = .{};
 
     lock.lock();
     try testing.expect(!lock.tryLock());
