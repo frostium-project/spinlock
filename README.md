@@ -4,7 +4,7 @@ Use this only if you NEED a spinlock, use a proper mutex with OS blessings other
 
 ## Usage
 First, add the package to your build.zig.zon:  
-`zig fetch --save=spinlock https://github.com/frostium-project/spinlock/archive/v0.0.3.tar.gz`  
+`zig fetch --save git+https://github.com/frostium-project/spinlock#dev`
 Then, add the following to your build.zig:  
 ```zig
 const spinlock = b.dependency("spinlock", .{
@@ -13,3 +13,5 @@ const spinlock = b.dependency("spinlock", .{
 });
 exe.root_module.addImport("spinlock", spinlock.module("spinlock"));
 ```
+
+Now, you can import the `spinlock` module.
